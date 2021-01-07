@@ -1,4 +1,4 @@
-hostname: 101-bytedance.harbor.com 
+hostname: harbor。101.com 
   
 http:
     port: 9010
