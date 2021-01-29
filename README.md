@@ -9,9 +9,10 @@ $ cd /opt && wget https://storage.googleapis.com/harbor-releases/release-1.8.0/h
 $ cd /opt && tar xvf harbor-offline-installer-v1.8.0.tgz
 $ cd /opt/harbor && mv harbor.yml harbor.yml.bak
 $ cd /opt/harbor && wget https://raw.githubusercontent.com/Joker1222/Harbor-Deploy/main/harbor.yml 
-$ cd /opt/ && curl -fsSL get.docker.com -o get-docker.sh && bash get-docker.sh --mirror Aliyun && \
-curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
-$ ./install.sh
+$ curl -fsSL get.docker.com -o get-docker.sh && bash get-docker.sh --mirror Aliyun && \
+curl -L https://github.com/docker/compose/releases/download/1.22.0/docker-compose-`uname -s`-`uname -m` -o /usr/bin/docker-compose \
+chmod -x /usr/bin/docker-compose
+$ cd /opt/harbor && ./install.sh
 $ echo "127.0.0.1 harbor.101.com" >> /etc/hosts
 ~~~
 
