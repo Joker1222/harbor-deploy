@@ -35,7 +35,7 @@ $ echo "127.0.0.1 harbor.101.com" >> /etc/hosts
 
 **Docker登录**
 ~~~bash
-root@localhost:/opt/harbor# docker login 101-bytedance.harbor.com:9010
+root@localhost:/opt/harbor# docker login harbor.101.com:9010
 Username: joker
 Password: 
 WARNING! Your password will be stored unencrypted in /root/.docker/config.json.
