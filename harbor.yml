@@ -1,4 +1,4 @@
-hostname: harbor。101.com 
+hostname: harbor.101.com 
   
 http:
     port: 9010
